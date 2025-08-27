@@ -1,5 +1,7 @@
 
 import Image from "next/image";
+import Link from "next/link";
+import {FaFacebook} from "react-icons/fa"
 
 
 function Nosotros() {
@@ -10,11 +12,19 @@ function Nosotros() {
             <Image
                 src="/Diente.jpg"
                 alt="Diente"
-                width={400}
-                height={400}
-                className="mx-auto mt-[7rem] "
+                width={350}
+                height={350}
+                className="mx-auto mt-[7rem]"
             />
-            <p className="text-center text-[6rem]">???</p>
+           <div className="w-full flex justify-center mt-[2rem]">
+            <Image
+                src="/image.png"
+                alt="Diente"
+                width={600}
+                height={350}
+                className="ml-8"
+            />
+            </div > 
         </div>
     );
 };
