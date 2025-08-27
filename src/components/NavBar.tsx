@@ -29,7 +29,7 @@ function NavBar() {
                         </Link>
                     </li>
 
-                    <li className="flex gap-8">
+                    <div className="flex gap-8">
 
                         <li className="relative group">
                             <Link href="#" className="flex gap-1 items-center group-hover:text-[#03399e] font-bold">
@@ -38,7 +38,23 @@ function NavBar() {
                             </Link>
 
                             <ul className="absolute hidden group-hover:block bg-gray-100 left-0 top-10 w-[23rem] rounded-lg z-10">
-                                <Link href="#" ><li className="hover:bg-[#03399e] hover:text-[#ffffff] px-4 py-2 rounded-lg">Diagnostico y preventivo</li></Link>
+                                <li className="relative group hover:bg-[#03399e] hover:text-[#ffffff] px-4 py-2 rounded-lg">
+                                    <Link href="#">
+                                        Diagnostico y preventivo
+                                    </Link>
+                                    {/*<ul className="absolute hidden group-hover:block bg-gray-100 right-full top-0 w-[18rem] rounded-lg shadow-lg z-20">
+                                        <Link href="#">
+                                        <li className="hover:bg-[#03399e] hover:text-[#ffffff] px-4 py-2 rounded-lg">Frenillos</li>
+                                        </Link>
+                                        <Link href="#">
+                                        <li className="hover:bg-[#03399e] hover:text-[#ffffff] px-4 py-2 rounded-lg">Invisalign</li>
+                                        </Link>
+                                        <Link href="#">
+                                        <li className="hover:bg-[#03399e] hover:text-[#ffffff] px-4 py-2 rounded-lg">Retenedores</li>
+                                        </Link>
+                                    </ul>*/}
+                                </li>
+                                    
                                 <Link href="#" ><li className="hover:bg-[#03399e] hover:text-[#ffffff] px-4 py-2 rounded-lg">Ortodoncia</li></Link>
                                 <Link href="#" ><li className="hover:bg-[#03399e] hover:text-[#ffffff] px-4 py-2 rounded-lg">Peridoncia</li></Link>
                                 <Link href="#" ><li className="hover:bg-[#03399e] hover:text-[#ffffff] px-4 py-2 rounded-lg">Odontología prostética</li></Link>
@@ -55,6 +71,8 @@ function NavBar() {
                             </ul>
                         </li>
 
+                        <div className="w-[.2rem] bg-[#03399e]"/>
+
                         <li className="relative group">
                             <Link href="#" className="flex gap-1 items-center group-hover:text-[#03399e] font-bold">
                                 Accesibilidad
@@ -68,15 +86,17 @@ function NavBar() {
                             </ul>
                         </li>
 
+                        <div className="w-[.2rem] bg-[#03399e]"/>
+
                         <li>
-                            <Link href="#" className="hover:text-[#03399e] font-bold">Nosotros</Link>
+                            <Link href="/nosotros" className="hover:text-[#03399e] font-bold">Nosotros</Link>
                         </li>
 
                         {/*<li>
                             <Link href="#" className="hover:text-[#03399e] font-bold">Noticias</Link>
                         </li>*/}
 
-                    </li>
+                    </div>
 
                     <li>
                         <p className="flex items-center gap-[.8rem] bg-[#ffffff] border border-[#03399e] text-[#03399e]  px-4 py-2 rounded-full hover:bg-[#03399e] hover:text-[#ffffff] hover:border-transparent font-bold cursor-pointer">

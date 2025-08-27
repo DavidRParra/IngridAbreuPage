@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import NavBar from "../components/NavBar";
+import FooterPage from "@/components/FooterPage";
 
 const fuente = Roboto({
   style: ["normal"],
@@ -25,10 +26,13 @@ export default function RootLayout({
   return (
     <html lang="ES">
       <body
-        className={fuente.className}
+        className={`${fuente.className} flex flex-col min-h-screen`}
       >
         <NavBar />
-        {children}
+        <main className="flex-grow">
+          {children}
+        </main>
+        <FooterPage/>
       </body>
     </html>
   );
