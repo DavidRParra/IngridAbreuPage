@@ -9,7 +9,7 @@ function CitasPage() {
                 Vamos a personalizar tus opciones de cita
             </h2>
             <p className="font-bold">
-                Solo unos pocos detalles rápidos para que podamos igualar tu información y mostrar lo que está disponible en las oficinas de Sage Dental cercanas
+                Solo unos pocos detalles rápidos para que podamos confirmar tu información y mostrar lo que está disponible en nuestra oficina más cercanas
             </p>
 
             <form action="" className="grid grid-cols-2 gap-6 w-[70%] border font-bold text-[#03399e] border-[#03399e] p-5 rounded-lg">
