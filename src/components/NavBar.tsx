@@ -113,11 +113,12 @@ function NavBar() {
                     </li>
 
                     <li className="flex items-center text-center gap-2 w-[25%]">
-                        <Link href="https://maps.app.goo.gl/w4Lz4Gwj9zCcWPBd9" target="_blank" className="flex items-center gap-[.8rem] border border-transparent bg-[#03399e] text-[#ffffff] px-4 py-2 rounded-4xl hover:bg-[#ffffff] hover:text-[#03399e] hover:border-[#03399e] text-[1.8rem] font-bold cursor-pointer w-[50%] justify-center">
+                        <Link href="https://maps.app.goo.gl/w4Lz4Gwj9zCcWPBd9" target="_blank" 
+                        className="flex items-center gap-[.8rem] border border-transparent bg-[#03399e] text-[#ffffff] px-2 py-2 rounded-4xl hover:bg-[#ffffff] hover:text-[#03399e] hover:border-[#03399e] text-[1.8rem] font-bold cursor-pointer w-[30%] justify-center">
                             <FaMapMarked />
                             La Vega
                         </Link>
-                        <p className="text-[1.2rem] w-[50%] flex justify-start font-bold">
+                        <p className="text-[1.2rem] w-[70%] flex justify-start font-bold">
                         La Vega, Avenida Pedro A. Rivera en la plaza azura, primer nivel.
                         </p>
                     </li>
