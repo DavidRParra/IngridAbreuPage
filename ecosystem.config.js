@@ -6,7 +6,7 @@ module.exports = {
     args: "run start",                // El comando "npm run start"
     env: {
       NODE_ENV: "production",
-      PORT: 3020,
+      PORT: 3030,
     },
     // Este proceso debe ser usado después de ejecutar "npm run build"
   }]
