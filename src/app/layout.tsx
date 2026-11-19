@@ -1,7 +1,8 @@
+
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import NavBar from "../components/NavBar";
+import PageLayout from "@/components/PageLayout";
 import FooterPage from "@/components/FooterPage";
 import SocialMedia from "@/components/SocialMedia";
 
@@ -25,16 +26,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ES">
-      <body
-        className={`${fuente.className} flex flex-col min-h-screen`}
-      >
-        <NavBar />
-        <main className="flex-grow">
+    <html lang="es">
+      <body className={`${fuente.className} flex flex-col min-h-screen`}>
+
+        <PageLayout>
           {children}
-        </main>
+        </PageLayout>
+
         <SocialMedia/>
         <FooterPage/>
+
       </body>
     </html>
   );
